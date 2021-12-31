@@ -1,0 +1,27 @@
+{
+	"name": "wawServer",
+	"description": "Default waw project with Angular client and Template landing",
+	"keywords": "Default Project",
+	"license": "MIT",
+	"icon": "/favicon.ico",
+	"prefix": "wawServer",
+	"port": 8080,
+	"session": true,
+	"mongo": {
+		"host": "localhost",
+		"port": 27017,
+		"db": "waw"
+	},
+	"parts": {
+		"core": "waw",
+		"sem": "waw"
+	},
+	"dependencies": {
+		"mongoose": "*"
+	},
+	"user": {
+		"is": {
+			"admin": "ceo@webart.work"
+		}
+	}
+}
