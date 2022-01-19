@@ -41,17 +41,6 @@ module.exports = async function(waw) {
 			});
 		});
 	/*
-	*	Serve Client
-	*/
-		waw.serve(process.cwd() + '/client/dist/app');
-		waw.url(process.cwd() + '/client/dist/app/index.html', '/admin/users /profile /');
-	    waw.url(process.cwd() + '/template/dist/index.html', '/', {
-	        title: waw.config.name,
-	        description: waw.config.description,
-	        keywords: waw.config.keywords,
-	        image: 'https://webart.work/template/img/spider.svg'
-	    });
-	/*
 	*	Set is on users from config
 	*/
 		const set_is = (email, is)=>{
@@ -113,7 +102,7 @@ module.exports = async function(waw) {
 				console.log(user.resetPin);
 				user.resetCreate = new Date().getTime();
 				user.resetCounter = 3;
-				user.markModified('data'); 
+				user.markModified('data');
 					user.save(function(err){
 						if (err) throw err;
 						waw.send({
@@ -149,7 +138,7 @@ module.exports = async function(waw) {
 					delete user.resetCounter;
 					delete user.resetCreate;
 				}
-				user.markModified('data'); 
+				user.markModified('data');
 				user.save(function(err) {
 					if (err) throw err;
 					res.json(message);

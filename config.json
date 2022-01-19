@@ -1,6 +1,6 @@
 {
 	"name": "wawServer",
-	"description": "Default waw project with Angular client and Template landing",
+	"description": "Default waw server project",
 	"keywords": "Default Project",
 	"license": "MIT",
 	"icon": "/favicon.ico",
@@ -23,5 +23,6 @@
 		"is": {
 			"admin": "ceo@webart.work"
 		}
-	}
+	},
+	"server": ""
 }
