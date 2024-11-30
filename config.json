@@ -1,6 +1,8 @@
 {
+	"server": "",
 	"name": "wawServer",
 	"description": "Default waw server project",
+	"image": "https://webart.work/template/img/spider.svg",
 	"keywords": "Default Project",
 	"license": "MIT",
 	"icon": "/favicon.ico",
@@ -8,21 +10,18 @@
 	"port": 8080,
 	"session": true,
 	"mongo": {
-		"host": "localhost",
+		"host": "127.0.0.1",
 		"port": 27017,
 		"db": "waw"
 	},
-	"parts": {
+	"modules": {
 		"core": "waw",
 		"sem": "waw"
 	},
-	"dependencies": {
-		"mongoose": "*"
-	},
+	"dependencies": {},
 	"user": {
 		"is": {
 			"admin": "ceo@webart.work"
 		}
-	},
-	"server": ""
+	}
 }

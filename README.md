@@ -1,8 +1,8 @@
 ## pre-install:
 ```
-root: npm i
+root: npm i waw
 ```
 ## run server:
 ```
-root: npm run start
+root: node server.js
 ```
